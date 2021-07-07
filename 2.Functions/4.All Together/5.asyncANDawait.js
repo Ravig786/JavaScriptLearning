@@ -39,10 +39,14 @@ function videoDetails(video) {
 //     });
 
 async function displayUser() {
-    const loggedUser = await loginUser("ed", "123456");
-    const videos = await getUserVideos(loginUser.userEmail);
-    const detail = await videoDetails(videos[0]);
-    console.log(detail);
+    try {
+        const loggedUser = await loginUser("ed", "123456");
+        const videos = await getUserVideos(loginUser.userEmail);
+        const detail = await videoDetails(videos[0]);
+        console.log(detail);
+    } catch (err) {
+        console.log("Error : " + err);
+    }
 }
 
 displayUser();
