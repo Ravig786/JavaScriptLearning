@@ -47,6 +47,10 @@ const promiseThree = new Promise((resolve, reject) => {
     setTimeout(resolve, 2000, "Goodbye");
 });
 
-Promise.all([promiseOne, promiseTwo, promiseThree]).then((values) =>
-    console.log(values)
+const promiseFour = fetch("https://jsonplaceholder.typicode.com/users").then(
+    (res) => res.json()
+);
+
+Promise.all([promiseOne, promiseTwo, promiseThree, promiseFour]).then(
+    (values) => console.log(values)
 );
