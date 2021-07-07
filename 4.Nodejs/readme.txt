@@ -18,3 +18,10 @@ Non-blocking I/O
     - Supports tens of thousands concurrent connections
     - Optimizes throughout & scalability in apps with many I/O operations
     - All of this makes Node.js apps very fast and efficient
+
+Node's Event Loop
+  - Single threaded
+  - Supports concurrency via events & callbacks
+  - EventEmitter class is used to bind events and listeners
+  -Link 
+https://lucid.app/lucidspark/invitations/accept/inv_6d480401-b61d-484f-9e18-9fb4123f4be7
