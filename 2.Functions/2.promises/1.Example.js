@@ -19,7 +19,23 @@ function getPosts() {
 }
 
 function createPost(post) {
-    setTimeout(() => {
-        posts.push(post);
-    }, 2000);
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            posts.push(post);
+            const error = false;
+
+            if (!error) {
+                resolve();
+            } else {
+                reject("Error: Something went wrong");
+            }
+        }, 2000);
+    });
 }
+
+createPost({
+        title: "Post Three",
+        body: "This is post three",
+    })
+    .then(getPosts)
+    .catch((err) => console.log(err));
