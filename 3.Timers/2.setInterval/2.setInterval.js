@@ -1,0 +1,1 @@
+// **setInterval(Put a delayed operation in a loop)
