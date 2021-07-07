@@ -38,4 +38,6 @@ console.log(calc(2, 3, multiply)); // multiply
 console.log(calc(2, 3, printNumbers)); // print
 
 
-console.log(calc(2, 3, function(a, b) { return a - b; }))
+console.log(calc(2, 3, function(a, b) {
+    return a - b;
+}));
