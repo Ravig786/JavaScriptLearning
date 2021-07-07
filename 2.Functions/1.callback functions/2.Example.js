@@ -30,6 +30,8 @@ let printNumbers = function(a, b) {
 let calc = function(num1, num2, callback) {
     if (typeof callback === "function") {
         return callback(num1, num2);
+    } else {
+        return "callback is not a fucntion";
     }
 };
 
@@ -37,6 +39,7 @@ console.log(calc(2, 3, add)); // add
 console.log(calc(2, 3, multiply)); // multiply
 console.log(calc(2, 3, printNumbers)); // print
 
+// define your own function
 console.log(
     calc(2, 3, function(a, b) {
         return a - b;
