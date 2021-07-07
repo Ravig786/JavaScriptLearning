@@ -9,7 +9,6 @@
 
 // console.log(calc(2, 3, "add"));
 
-
 // Second Way:
 
 // add two numbers
@@ -27,17 +26,19 @@ let printNumbers = function(a, b) {
     console.log(`Here are your two numbers ${a} , ${b}`);
 };
 
-// Calculate 
+// Calculate
 let calc = function(num1, num2, callback) {
-    return callback(num1, num2);
+    if (typeof callback === "function") {
+        return callback(num1, num2);
+    }
 };
-
 
 console.log(calc(2, 3, add)); // add
 console.log(calc(2, 3, multiply)); // multiply
 console.log(calc(2, 3, printNumbers)); // print
 
-
-console.log(calc(2, 3, function(a, b) {
-    return a - b;
-}));
+console.log(
+    calc(2, 3, function(a, b) {
+        return a - b;
+    })
+);
