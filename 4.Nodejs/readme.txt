@@ -12,3 +12,9 @@ Why use Nodejs ?
 -> Event driven , nonblocking I/O model
 -> Popular in the industry
 -> Same language on the front and back end (JS)
+
+Non-blocking I/O
+    - Works on a single thread using non-blocking I/O calls
+    - Supports tens of thousands concurrent connections
+    - Optimizes throughout & scalability in apps with many I/O operations
+    - All of this makes Node.js apps very fast and efficient
