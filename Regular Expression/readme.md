@@ -1,5 +1,5 @@
-#Regular Expression Basics
 ```
+#Regular Expression Basics
 Is a regular expression enclosed in single quotation marks constructed using literals and metacharacters. The following metacharacters are supported
 
 .   -> represents any single character
