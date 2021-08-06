@@ -1,4 +1,4 @@
-`
+```
 Is a regular expression enclosed in single quotation marks constructed using literals and metacharacters. The following metacharacters are supported
 
 . represents any single character
@@ -13,5 +13,5 @@ $ represents end of line
 \ is the Escape Special Character
 () contains a character sequence
 For example, the regular expression '^Ste(v|ph)en$' matches values starting with Ste followed by either ph or v, and ending with en.
-`
+```
 
