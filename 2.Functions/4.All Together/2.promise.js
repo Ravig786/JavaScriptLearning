@@ -11,13 +11,27 @@
 
 const promiseOne = new Promise((resolve, reject) => {
     setTimeout(() => {
-        console.log("Got the user");
+        console.log("Reject");
         reject(new Error("User not logged in"));
     }, 2000);
+
+    setTimeout(() => {
+        console.log("Resolve");
+        resolve({
+            user: {
+                name: 'John',
+                email: 'John@example.com'
+            }
+        })
+    }, 1000);
 });
 
 promiseOne
     .then((user) => {
+        console.log("Inside then")
         console.log(user);
     })
-    .catch((err) => console.log(err.message));
+    .catch((err) => {
+        console.log("Inside catch")
+        console.log(err.message)
+    });

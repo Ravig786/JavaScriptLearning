@@ -21,11 +21,11 @@ const arr = [5, 1, 3, 2, 6];
 
 // ?filter
 
-// function isodd(x){
-//     return x%2;
-// }
+function isodd(x){
+    return x%2;
+}
 
-// //const output = arr.filter(isodd);
+// const output = arr.filter(isodd);
 // const output = arr.filter(x => x%2);
 // console.log(output);
 
