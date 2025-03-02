@@ -14,7 +14,7 @@ let p4 = new Promise(function (resolve, reject) {
     resolve('Promise 4 resolved');
 })
 
-let promiseAll = Promise.all([p1, p2, p3, p4]);
+let promiseAll = Promise.allSettled([p1, p2, p3, p4]);
 
 promiseAll.then((promiseArr) => {
     console.log(promiseArr);
